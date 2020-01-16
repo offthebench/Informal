@@ -12,12 +12,21 @@
     }
   }
 
+@font-face {
+  font-family: Informal;
+  src: url(Informal-Regular.ttf);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
 .center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .bounce {
-    animation: bounceIn 5s;
-  }
+  animation: bounceIn 5s;
+}

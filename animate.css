@@ -1,0 +1,45 @@
+html {
+    height:100%;
+  }
+  
+  body {
+    margin:0;
+  }
+
+  .normal {
+	filter: invert(0%);
+  }
+
+  .inverted {
+	filter: invert(100%);
+  }
+  
+  .bg {
+    animation:slide 5s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #fff 50%, #000 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.8;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:5s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
